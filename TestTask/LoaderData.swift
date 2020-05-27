@@ -15,7 +15,7 @@ class LoaderData {
     
     fileprivate let userAuth = UserAuth().params
     fileprivate let baseUrl = "http://37.140.199.187:3000/auth/login"
-    typealias callBackUser = (_ countries:[Profile]?, _ status: Bool, _ message: String) -> Void
+    typealias callBackUser = (_ user: [Profile]?, _ status: Bool, _ message: String) -> Void
     var callBack: callBackUser?
     
     init() {
