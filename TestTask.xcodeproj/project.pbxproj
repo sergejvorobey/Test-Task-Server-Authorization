@@ -16,6 +16,7 @@
 		87B3C94F247E820100D8DCDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B3C94D247E820100D8DCDA /* LaunchScreen.storyboard */; };
 		87B3C95B247E82B200D8DCDA /* LoaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B3C95A247E82B200D8DCDA /* LoaderData.swift */; };
 		87B3C95D247E85AB00D8DCDA /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B3C95C247E85AB00D8DCDA /* Profile.swift */; };
+		87B3C95F247ECDA000D8DCDA /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B3C95E247ECDA000D8DCDA /* AuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		87B3C950247E820100D8DCDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87B3C95A247E82B200D8DCDA /* LoaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderData.swift; sourceTree = "<group>"; };
 		87B3C95C247E85AB00D8DCDA /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		87B3C95E247ECDA000D8DCDA /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		99E5581B4EEC1257A8A67E3B /* Pods-TestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTask.release.xcconfig"; path = "Target Support Files/Pods-TestTask/Pods-TestTask.release.xcconfig"; sourceTree = "<group>"; };
 		B43B9A3D02E91DCD906B7D47 /* Pods-TestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTask.debug.xcconfig"; path = "Target Support Files/Pods-TestTask/Pods-TestTask.debug.xcconfig"; sourceTree = "<group>"; };
 		F4CD4A71B85A788717842FF8 /* Pods_TestTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				87B3C946247E81FF00D8DCDA /* ViewController.swift */,
+				87B3C95E247ECDA000D8DCDA /* AuthViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				87B3C95D247E85AB00D8DCDA /* Profile.swift in Sources */,
 				87B3C947247E81FF00D8DCDA /* ViewController.swift in Sources */,
 				87B3C943247E81FF00D8DCDA /* AppDelegate.swift in Sources */,
+				87B3C95F247ECDA000D8DCDA /* AuthViewController.swift in Sources */,
 				87B3C945247E81FF00D8DCDA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,8 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var id: UILabel!
     @IBOutlet weak var login: UILabel!
-    @IBOutlet weak var accessToken: UILabel!
-    
+
     private var userData = [Profile]()
     
     private func getData() {
@@ -29,7 +28,6 @@ class ViewController: UIViewController {
                     
                     self.id.text = "ID: \(user.id)"
                     self.login.text = "LOGIN: \(user.login)"
-                    self.accessToken.text = "ACCESS_TOKEN: \(user.access_token)"
                     
                 }
             }
