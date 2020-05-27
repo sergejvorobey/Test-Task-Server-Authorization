@@ -7,14 +7,39 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+    @IBOutlet weak var id: UILabel!
+    @IBOutlet weak var login: UILabel!
+    @IBOutlet weak var accessToken: UILabel!
+    
+    private var userData = [Profile]()
+    
+    private func getData() {
+        let dataLoader = LoaderData()
+        dataLoader.completionHandler {[weak self] (data, status, _) in
+            if status {
+                guard let self = self else {return}
+                guard let _data = data else {return}
+                self.userData = _data
+                
+                for user in self.userData {
+                    
+                    self.id.text = "ID: \(user.id)"
+                    self.login.text = "LOGIN: \(user.login)"
+                    self.accessToken.text = "ACCESS_TOKEN: \(user.access_token)"
+                    
+                }
+            }
+        }
     }
-
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        getData()
+        
+    }
 }
-
